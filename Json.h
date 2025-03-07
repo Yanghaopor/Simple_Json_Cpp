@@ -1,5 +1,10 @@
 // Json.h
 #pragma once
+
+#ifdef _MSC_VER
+#define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
+#endif
+
 #include <string>
 #include <map>
 #include <variant>
@@ -9,6 +14,7 @@
 #include <locale>
 #include <stdexcept>
 #include <codecvt>
+#include <iomanip>
 
 using namespace std;
 
